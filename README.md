@@ -14,7 +14,7 @@ https://github.com/shruti45/shruti-rugi-news-app-test.git
 2. Go to the project repository and Run the fallowing commands.
 
 ```
-Yarn add
+Yarn install
 ```
 To run on android device
 ```
