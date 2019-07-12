@@ -3,7 +3,7 @@
 This is the repository that holds the frontend (ios/android) code for news app.
 
 
-# Instructions to ren the app on device
+# Instructions to run the app on device
 
 1.Clone the repository using provide link
 
