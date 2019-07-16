@@ -30,6 +30,11 @@ const topNews = (
         error: action.error
       });
     }
+    case newsActions.CLEAR_TOP_HEADLINES: {
+      return Object.assign({}, state, {
+        topNewsHeadLines: null
+      });
+    }
     default:
       return state;
   }

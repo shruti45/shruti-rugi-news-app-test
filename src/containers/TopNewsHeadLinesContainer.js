@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import NewsList from "../components/TopNewsHeadLines";
-import { getTopNewsHeadLines } from "../actions/news.actions";
+import { getTopNewsHeadLines, cleartopHeadlines } from "../actions/news.actions";
 
 const mapStateToProps = state => {
   return {
@@ -13,9 +13,13 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getTopNewsHeadLines: () => {
-      dispatch(getTopNewsHeadLines());
+    getTopNewsHeadLines: (serachkey) => {
+      dispatch(getTopNewsHeadLines(serachkey));
+    },
+    cleartopHeadlines: (serachkey) => {
+      dispatch(cleartopHeadlines(serachkey));
     }
+
   };
 };
 
